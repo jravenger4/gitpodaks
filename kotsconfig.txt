@@ -1,0 +1,81 @@
+apiVersion: kots.io/v1beta1
+kind: ConfigValues
+metadata:
+  creationTimestamp: null
+spec:
+  values:
+    advanced_mode_enabled:
+      default: "0"
+      value: "0"
+    cert_manager_enabled:
+      default: "1"
+    cert_manager_issuer:
+      default: ClusterIssuer
+    cert_manager_issuer_name:
+      value: gitpod-aks-issuer
+    component_proxy_service_serviceType: {}
+    config_patch: {}
+    customization_patch: {}
+    db_cloudsql_enabled:
+      default: "0"
+    db_cloudsql_instance: {}
+    db_encryption_keys:
+      value: '[{"name":"general","version":1,"primary":true,"material":"4uGh1q8y2DY6ryJwHs0kWXJl3qvHWWtd/KJuNi04edI="}]'
+    db_gcp_credentials: {}
+    db_host:
+      value: xx.mysql.database.azure.com
+    db_incluster:
+      default: "1"
+      value: "0"
+    db_password:
+      value: zBP2gr2SZgdaUtRlrEndg0Z9eGpbE/g0=
+    db_port:
+      value: "3306"
+    db_username:
+      value: gitpod
+    domain:
+      value: gitpod.xx.com
+    openVsxUrl: {}
+    reg_docker_config: {}
+    reg_docker_config_enable:
+      default: "0"
+    reg_incluster:
+      default: "1"
+    reg_incluster_storage:
+      default: none
+    reg_incluster_storage_s3_accesskey: {}
+    reg_incluster_storage_s3_bucketname: {}
+    reg_incluster_storage_s3_endpoint:
+      value: s3.amazonaws.com
+    reg_incluster_storage_s3_region: {}
+    reg_incluster_storage_s3_secretkey: {}
+    reg_password: {}
+    reg_server: {}
+    reg_url: {}
+    reg_username: {}
+    ssh_gateway:
+      default: "0"
+      value: "1"
+    store_azure_access_key: {}
+    store_azure_account_name: {}
+    store_gcp_credentials: {}
+    store_gcp_project: {}
+    store_provider:
+      default: incluster
+    store_region: {}
+    store_s3_access_key_id: {}
+    store_s3_bucket: {}
+    store_s3_endpoint:
+      value: s3.amazonaws.com
+    store_s3_secret_access_key: {}
+    tls_ca_crt: {}
+    tls_crt: {}
+    tls_key: {}
+    tls_self_signed_enabled:
+      default: "0"
+    user_management_block_enabled:
+      default: "0"
+    user_management_block_passlist: {}
+status: {}
+  • KOTS CLI version 1.86.0 does not match API version 1.85.0. To update, run:
+  $ curl https://kots.io/install/1.85.0 | bash
